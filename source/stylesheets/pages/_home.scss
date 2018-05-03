@@ -16,9 +16,30 @@
     font-weight: bold;
     font-size: 16px;
   }
+  ul {
+    list-style-type: none;
+    margin-left: -25px;
+    padding-left: 0px;
+}
+li {
+    display: inline;
+    padding: 0px 5px;
+}
 }
 
 .header {
   margin-top: 35px;
   margin-bottom: 30px;
+}
+
+
+.links:hover{
+  color: white;
+}
+.links-box{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.text-center {
+  text-align: center;
 }
