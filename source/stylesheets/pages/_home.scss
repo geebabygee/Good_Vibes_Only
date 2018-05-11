@@ -31,6 +31,7 @@ li {
     margin-top: 20px;
     font-size: 25px;
     font-style: bolder;
+  text-align: center;
   }
 }
 
@@ -41,6 +42,7 @@ li {
 .links-box{
   margin-top: 30px;
   margin-bottom: 30px;
+  position: absolute;
 }
 .text-center {
   text-align: center;
@@ -53,7 +55,8 @@ li {
 #iri-pic img {
   border-radius: 4px;
   position: absolute;
-
+  margin-top: 150px;
+  margin-left: -168px;
 }
 
 .daisy {
