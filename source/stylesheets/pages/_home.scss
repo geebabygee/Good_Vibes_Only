@@ -3,14 +3,9 @@
   color: black;
   height: 100vh;
   display: flex;
-  // align-items: center;
   justify-content: space-around;
   text-align: center;
-  h4 {
-    margin-top: 20px;
-    font-size: 25px;
-    font-style: bolder;
-  }
+  position: relative;
   a {
     color: rgba(0,0,0,0.4);
     font-weight: bold;
@@ -30,6 +25,14 @@ li {
 .header {
   margin-top: 45px;
   margin-bottom: 30px;
+  position: absolute;
+
+  h4 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-style: bolder;
+  text-align: center;
+  }
 }
 
 
@@ -39,24 +42,27 @@ li {
 .links-box{
   margin-top: 30px;
   margin-bottom: 30px;
+  position: absolute;
 }
 .text-center {
   text-align: center;
 }
 
 #iri-pic {
-  position: relative;
+  position: absolute;
 }
 
 #iri-pic img {
   border-radius: 4px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -168px;
 }
 
 .daisy {
   position: absolute;
   top: 350px;
   right: 400px;
-  // flex: 0 0 20%;
   width: 100px;
   height: 100px;
 }
@@ -66,16 +72,16 @@ li {
 }
 .daisy img {
   height: 100%;
-  // display: block;
   width: 100%;
   height: auto;
-  // -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  // -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .daisy:hover img {
-  // -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+
+#canvas {
+  background-color: #F9F1DC;
 }
