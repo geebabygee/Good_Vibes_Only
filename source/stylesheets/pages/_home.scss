@@ -83,10 +83,10 @@ li {
   left: 100px;
   // filter: drop-shadow(5px 5px 5px #222);
   @keyframes example {
-    0%   {background-color:#FFD2A5; right:0px; top:0px;}
-    25%  {background-color:#FFA8B8; right:200px; top:0px;}
-    50%  {background-color:#D988BC; right:400px; top:200px;}
-    75%  {background-color:#FFFFC1; right:0px; top:200px;}
+    0%   {background-color:#FFD2A5; bottom:0px; top:0px;}
+    25%  {background-color:#FFA8B8; bottom:200px; top:0px;}
+    50%  {background-color:#D988BC; bottom:400px; top:200px;}
+    75%  {background-color:#FFFFC1; bottom:0px; top:200px;}
     100% {background-color:#FFD3AD; right:0px; top:0px;}
 }
 }
