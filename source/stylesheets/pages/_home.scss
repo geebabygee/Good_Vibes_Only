@@ -74,7 +74,7 @@ li {
 @keyframes example {
     0%   {background-color:#FFD2A5; left:0px; top:0px;}
     25%  {background-color:#FFA8B8; left:200px; top:0px;}
-    50%  {background-color:#D988BC; left:200px; top:200px;}
+    50%  {background-color:#D988BC; left:400px; top:200px;}
     75%  {background-color:#FFFFC1; left:0px; top:200px;}
     100% {background-color:#FFD3AD; left:0px; top:0px;}
 }
@@ -82,6 +82,13 @@ li {
   top: 10px;
   left: 100px;
   // filter: drop-shadow(5px 5px 5px #222);
+  @keyframes example {
+    0%   {background-color:#FFD2A5; right:0px; top:0px;}
+    25%  {background-color:#FFA8B8; right:200px; top:0px;}
+    50%  {background-color:#D988BC; right:400px; top:200px;}
+    75%  {background-color:#FFFFC1; right:0px; top:200px;}
+    100% {background-color:#FFD3AD; right:0px; top:0px;}
+}
 }
 .daisy img {
   height: 100%;
