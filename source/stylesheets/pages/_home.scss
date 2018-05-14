@@ -1,3 +1,5 @@
+
+
 #home {
   background-color: #F9F1DC;
   color: black;
@@ -61,34 +63,33 @@ li {
 
 .daisy {
   position: absolute;
-  top: 100px;
-  right: 400px;
+  top: 200px;
+  left: 100px;
   width: 120px;
   height: 120px;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 4s;
+
+    @keyframes example {
+    0%   {background-color:#F9F1DC; bottom:0px; top:0px;}
+    25%  {background-color:#F9F1DC; bottom:200px; top:0px;}
+    50%  {background-color:#F9F1DC; bottom:400px; top:200px;}
+    75%  {background-color:#F9F1DC; bottom:0px; top:200px;}
+    100% {background-color:#F9F1DC; right:0px; top:0px;}
+}
+ p {
+  color: pink;
+ }
 }
 
-@keyframes example {
-    0%   {background-color:#FFD2A5; left:0px; top:0px;}
-    25%  {background-color:#FFA8B8; left:200px; top:0px;}
-    50%  {background-color:#D988BC; left:400px; top:200px;}
-    75%  {background-color:#FFFFC1; left:0px; top:200px;}
-    100% {background-color:#FFD3AD; left:0px; top:0px;}
-}
+
 .daisy.dois {
   top: 10px;
   left: 100px;
   // filter: drop-shadow(5px 5px 5px #222);
-  @keyframes example {
-    0%   {background-color:#FFD2A5; bottom:0px; top:0px;}
-    25%  {background-color:#FFA8B8; bottom:200px; top:0px;}
-    50%  {background-color:#D988BC; bottom:400px; top:200px;}
-    75%  {background-color:#FFFFC1; bottom:0px; top:200px;}
-    100% {background-color:#FFD3AD; right:0px; top:0px;}
-}
+
 }
 .daisy img {
   height: 100%;
