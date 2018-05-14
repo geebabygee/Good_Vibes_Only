@@ -8,35 +8,20 @@
   justify-content: space-around;
   text-align: center;
   position: relative;
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
-  ul {
-    list-style-type: none;
-    margin-left: -25px;
-    padding-left: 0px;
-}
-li {
-    display: inline;
-    padding: 0px 5px;
-}
 }
 
 .header {
   margin-top: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   position: absolute;
 
   h4 {
-    margin-top: 20px;
     font-size: 25px;
     font-style: bolder;
   text-align: center;
+  margin-left: 40px;
   }
 }
-
 
 
 .text-center {
@@ -50,8 +35,8 @@ li {
 #iri-pic img {
   border-radius: 4px;
   position: absolute;
-  margin-top: 150px;
-  margin-left: -168px;
+  margin-top: 120px;
+  margin-left: -175px;
 }
 
 .daisy {
@@ -71,16 +56,17 @@ li {
     100% {background-color:#F9F1DC; right:0px; top:0px;}
 }
  p {
-  color: pink;
+  color: #FFC3E2;
   font-weight: bold;
   display: none;
  }
 
- h6 {
-  color: pink;
+ h5 {
+  color: #FFC3E2;
   font-weight: bold;
  }
 }
+
 
 
 .daisy:hover p {
@@ -113,4 +99,16 @@ li {
 
 #canvas {
   background-color: #F9F1DC;
+}
+
+.outer {
+  overflow: hidden;
+  // position: relative;
+}
+.inner {
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  right: -250px;
+  top: 400px;
 }
