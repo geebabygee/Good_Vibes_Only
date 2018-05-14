@@ -1,3 +1,5 @@
+
+
 #home {
   background-color: #F9F1DC;
   color: black;
@@ -36,14 +38,7 @@ li {
 }
 
 
-.links:hover{
-  color: white;
-}
-.links-box{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  position: absolute;
-}
+
 .text-center {
   text-align: center;
 }
@@ -61,15 +56,48 @@ li {
 
 .daisy {
   position: absolute;
-  top: 350px;
-  right: 400px;
-  width: 100px;
-  height: 100px;
+  top: 300px;
+  left: 100px;
+  width: 120px;
+  height: 120px;
+    animation-name: example;
+    animation-duration: 4s;
+
+    @keyframes example {
+    0%   {background-color:#F9F1DC; bottom:0px; top:0px;}
+    25%  {background-color:#F9F1DC; bottom:200px; top:0px;}
+    50%  {background-color:#F9F1DC; bottom:400px; top:200px;}
+    75%  {background-color:#F9F1DC; bottom:0px; top:200px;}
+    100% {background-color:#F9F1DC; right:0px; top:0px;}
 }
+ p {
+  color: pink;
+  font-weight: bold;
+  display: none;
+ }
+
+ h6 {
+  color: pink;
+  font-weight: bold;
+ }
+}
+
+
+.daisy:hover p {
+    display:block;
+}
+
 .daisy.dois {
-  top: 350px;
-  left: 400px;
+  top: 10px;
+  left: 100px;
+  // filter: drop-shadow(5px 5px 5px #222);
 }
+
+.daisy.tres {
+  top: 600px;
+  left: 100px;
+}
+
 .daisy img {
   height: 100%;
   width: 100%;
@@ -80,6 +108,7 @@ li {
 
 .daisy:hover img {
   filter: grayscale(0);
+
 }
 
 #canvas {
