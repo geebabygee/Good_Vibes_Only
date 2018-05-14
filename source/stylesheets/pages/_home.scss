@@ -38,14 +38,7 @@ li {
 }
 
 
-.links:hover{
-  color: white;
-}
-.links-box{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  position: absolute;
-}
+
 .text-center {
   text-align: center;
 }
@@ -63,12 +56,10 @@ li {
 
 .daisy {
   position: absolute;
-  top: 200px;
+  top: 300px;
   left: 100px;
   width: 120px;
   height: 120px;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: example;
     animation-duration: 4s;
 
@@ -81,16 +72,32 @@ li {
 }
  p {
   color: pink;
+  font-weight: bold;
+  display: none;
+ }
+
+ h6 {
+  color: pink;
+  font-weight: bold;
  }
 }
 
+
+.daisy:hover p {
+    display:block;
+}
 
 .daisy.dois {
   top: 10px;
   left: 100px;
   // filter: drop-shadow(5px 5px 5px #222);
-
 }
+
+.daisy.tres {
+  top: 600px;
+  left: 100px;
+}
+
 .daisy img {
   height: 100%;
   width: 100%;
@@ -101,6 +108,7 @@ li {
 
 .daisy:hover img {
   filter: grayscale(0);
+
 }
 
 #canvas {
