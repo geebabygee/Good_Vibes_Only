@@ -1,33 +1,75 @@
-#about {
+$height: 2em;
+$width: $height;
+$color: #f46e6e;
+$itemCount: 60;
+$degree: 360deg/$itemCount;
+$duration: 1s;
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $height / 5;
+  height: $width / 5;
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $height;
+    height: $height;
+    transform: translate(-50%, -50%);
+    background-color: $color;
+    border-radius: 50%;
+    content: '';
+  }
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  background-color: $color;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 50%;
+    transform: rotateY(-90deg) translateZ($height / 2);
+    content: '';
+    backface-visibility: visible;
+  }
+}
+
+@for $i from 1 through $itemCount {
+  .item:nth-child(#{$i}) {
+    transform: rotateY(90deg) rotateX($i * $degree) translateZ($height);
+    animation: itemOffset#{$i} $duration ease-in-out infinite reverse;
+    animation-delay: ($i)*$duration/10;
+  }
+
+  @keyframes itemOffset#{$i}{
+    50% {
+      transform: rotateY(90deg) rotateX($i * $degree) translateZ($height * 6);
+      background-color: hsl(($i * $degree), 50, 50);
+    }
+  }
+}
+
+body {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
-  img {
-    width: 150px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-  }
-  h1 {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    color: rgba(0,0,0,0.7);
-  }
-  h2 {
-    font-size: 17px;
-    font-weight: bold;
-    color: rgba(0,0,0,0.6);
-  }
-  a {
-    color: rgba(0,0,0,0.25);
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    font-size: 15px;
-  }
-  .fa-heart {
-    color: #D23333;
-  }
+  background: lighten(#F9F1DC, 0%);
+  background-image:
+    radial-gradient(center, rgba(white,0.1), transparent 75%);
+}
+
+body * {
+  transform-style: preserve-3d;
 }

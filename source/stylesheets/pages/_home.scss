@@ -1,3 +1,5 @@
+
+
 #home {
   background-color: #F9F1DC;
   color: black;
@@ -6,44 +8,22 @@
   justify-content: space-around;
   text-align: center;
   position: relative;
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
-  ul {
-    list-style-type: none;
-    margin-left: -25px;
-    padding-left: 0px;
-}
-li {
-    display: inline;
-    padding: 0px 5px;
-}
 }
 
 .header {
   margin-top: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   position: absolute;
 
   h4 {
-    margin-top: 20px;
     font-size: 25px;
     font-style: bolder;
   text-align: center;
+  margin-left: 40px;
   }
 }
 
 
-.links:hover{
-  color: white;
-}
-.links-box{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  position: absolute;
-}
 .text-center {
   text-align: center;
 }
@@ -55,21 +35,55 @@ li {
 #iri-pic img {
   border-radius: 4px;
   position: absolute;
-  margin-top: 150px;
-  margin-left: -168px;
+  margin-top: 120px;
+  margin-left: -175px;
 }
 
 .daisy {
   position: absolute;
-  top: 350px;
-  right: 400px;
-  width: 100px;
-  height: 100px;
+  top: 300px;
+  left: 100px;
+  width: 120px;
+  height: 120px;
+    animation-name: example;
+    animation-duration: 4s;
+
+    @keyframes example {
+    0%   {background-color:#F9F1DC; bottom:0px; top:0px;}
+    25%  {background-color:#F9F1DC; bottom:200px; top:0px;}
+    50%  {background-color:#F9F1DC; bottom:400px; top:200px;}
+    75%  {background-color:#F9F1DC; bottom:0px; top:200px;}
+    100% {background-color:#F9F1DC; right:0px; top:0px;}
 }
+ p {
+  color: #FFC3E2;
+  font-weight: bold;
+  display: none;
+ }
+
+ h5 {
+  color: #FFC3E2;
+  font-weight: bold;
+ }
+}
+
+
+
+.daisy:hover p {
+    display:block;
+}
+
 .daisy.dois {
-  top: 350px;
-  left: 400px;
+  top: 10px;
+  left: 100px;
+  // filter: drop-shadow(5px 5px 5px #222);
 }
+
+.daisy.tres {
+  top: 600px;
+  left: 100px;
+}
+
 .daisy img {
   height: 100%;
   width: 100%;
@@ -80,8 +94,21 @@ li {
 
 .daisy:hover img {
   filter: grayscale(0);
+
 }
 
 #canvas {
   background-color: #F9F1DC;
+}
+
+.outer {
+  overflow: hidden;
+  // position: relative;
+}
+.inner {
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  right: -250px;
+  top: 400px;
 }
